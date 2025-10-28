@@ -4,6 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background: #f5f7fa;
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        text-align: center;
+        color: #2c3e50;
+        margin-top: 40px;
+    }
+    form {
+        background: #fff;
+        max-width: 400px;
+        margin: 40px auto;
+        padding: 30px 30px 20px 30px;
+        border-radius: 12px;
+        box-shadow: 0 2px 12px rgba(44,62,80,0.08);
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    label {
+        font-weight: 500;
+        color: #34495e;
+        margin-bottom: 4px;
+    }
+    input[type="text"] {
+        padding: 8px 10px;
+        border: 1px solid #dfe6e9;
+        border-radius: 6px;
+        font-size: 1rem;
+        background: #f9fafb;
+        transition: border-color 0.2s;
+    }
+    input[type="text"]:focus {
+        border-color: #2980b9;
+        outline: none;
+    }
+    button[type="submit"] {
+        background: linear-gradient(90deg, #2980b9 0%, #6dd5fa 100%);
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        padding: 10px 0;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 10px;
+        box-shadow: 0 1px 4px rgba(44,62,80,0.08);
+        transition: background 0.2s;
+    }
+    button[type="submit"]:hover {
+        background: linear-gradient(90deg, #6dd5fa 0%, #2980b9 100%);
+    }
+    h2 {
+        text-align: center;
+        color: #27ae60;
+        margin-top: 20px;
+    }
+</style>
 </head>
 <body>
     <h1> FWI Prediction</h1>
