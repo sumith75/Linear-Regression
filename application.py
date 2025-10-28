@@ -43,7 +43,7 @@ def predict_datapoint():
         
         X_scaled = standard_scaler.transform([features])
         pred = ridge_model.predict(X_scaled)
-        # prediction = float(pred[0]) if hasattr(pred, '__len__') else float(pred)
+        
        
 
 
@@ -53,5 +53,5 @@ def predict_datapoint():
     return render_template('home.html')
 
 if __name__ == '__main__':
-    # For local dev only: enables auto-reload and debug
+    
     app.run(host='0.0.0.0', port=5000, debug=True)
